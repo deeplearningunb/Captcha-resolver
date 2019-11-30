@@ -1,0 +1,5 @@
+Augmentor
+tensorflow-gpu
+tensorflow
+keras
+imutils
