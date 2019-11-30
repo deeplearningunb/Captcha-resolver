@@ -2,10 +2,10 @@ version: "3"
 services:
   jupython:
     build: .
-    image: jupython/machine_learning
+    image: jupython/deep_learning
     command: "/opt/conda/bin/jupyter notebook --notebook-dir=/var/app --ip='0.0.0.0' --port=8888 --no-browser --allow-root"
     network_mode: bridge
-    container_name: jupyter_ocr
+    container_name: jupyter_deep_learning
     volumes:
       - ./src:/var/app/src
       - ./data:/var/app/data
